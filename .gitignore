@@ -1,0 +1,12 @@
+node_modules
+*.log
+.DS_Store
+.idea/
+*.iml
+coverage
+.nyc_output/
+package-lock.json*
+.idea
+target
+out
+.vscode
