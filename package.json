@@ -1,12 +1,11 @@
 {
   "name": "armor-types",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Various type declarations used across Armor",
-  "license": "Apache-2.0",
   "author": "ait-software",
   "types": "./build/lib/index.d.ts",
   "scripts": {
-    "build": "node scripts/generate-schema-types.js",
+    "build": "node scripts/generate-schema-types.js && tsc -b",
     "clean": "git checkout -- ./lib/armor-config.ts || true",
     "test:smoke": "node ./index.js",
     "test:types": "tsd"

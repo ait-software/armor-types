@@ -64,4 +64,15 @@ export interface Element<Id extends string = string> {
      */
     'element-6066-11e4-a52e-4f735466cecf': Id;
 }
+/**
+ * A W3C find element result.
+ * @see https://www.w3.org/TR/webdriver1/#elements
+ */
+export interface ElementFind extends Element {
+    /**
+     * This property name is the string constant W3C element identifier used to identify an object as
+     * a W3C element.
+     */
+    selector: string;
+}
 //# sourceMappingURL=util.d.ts.map

@@ -7,7 +7,7 @@ import type {ServerArgs} from './config';
 import type {HTTPHeaders, HTTPMethod} from './http';
 import type {ArmorLogger} from './logger';
 import type {ArmorServer, UpdateServerCallback} from './server';
-import type {Class, Element, StringRecord} from './util';
+import type {Class, Element, ElementFind, StringRecord} from './util';
 
 /**
  * Interface implemented by the `DeviceSettings` class in `@armor/base-driver`
@@ -250,6 +250,18 @@ export interface IFindCommands {
     selector: string,
     elementId: string
   ): Promise<Element[]>;
+
+  /**
+   * Find elements from selectors
+   * @param strategy - the locator strategy
+   * @param selector - the selector to combine with the strategy to find the specific elements
+   *
+   * @returns A possibly-empty list of element objects
+   */
+  findElementBySelectors(
+      strategy: string,
+      selector: string
+  ): Promise<ElementFind>;
 
   /**
    * Find an element from a shadow root
