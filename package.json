@@ -1,6 +1,6 @@
 {
   "name": "armor-types",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Various type declarations used across Armor",
   "author": "ait-software",
   "types": "./build/lib/index.d.ts",

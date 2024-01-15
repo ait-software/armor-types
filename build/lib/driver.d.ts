@@ -216,7 +216,7 @@ export interface IFindCommands {
      *
      * @returns A possibly-empty list of element objects
      */
-    findElementBySelectors(strategy: string, selector: string): Promise<ElementFind>;
+    findElementBySelectors(strategy: string, selector: string[]): Promise<ElementFind>;
     /**
      * Find an element from a shadow root
      * @see {@link https://w3c.github.io/webdriver/#find-element-from-shadow-root}

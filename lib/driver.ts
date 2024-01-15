@@ -260,7 +260,7 @@ export interface IFindCommands {
    */
   findElementBySelectors(
       strategy: string,
-      selector: string
+      selector: string[]
   ): Promise<ElementFind>;
 
   /**
