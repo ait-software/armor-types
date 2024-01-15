@@ -1,7 +1,7 @@
 import type {Express} from 'express';
 import type {Server as WSServer} from 'ws';
-import type {Server as HTTPServer} from 'node:http';
-import type {Socket} from 'node:net';
+import type {Server as HTTPServer} from 'http';
+import type {Socket} from 'net';
 import {ServerArgs} from './config';
 
 /**

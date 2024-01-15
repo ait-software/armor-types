@@ -1,5 +1,5 @@
 /// <reference types="node" />
-import type { EventEmitter } from 'node:events';
+import type { EventEmitter } from 'events';
 import type { Merge } from 'type-fest';
 import type { ActionSequence } from './action';
 import type { Capabilities, DriverCaps, W3CCapabilities, W3CDriverCaps } from './capabilities';
