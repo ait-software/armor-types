@@ -1,23 +1,23 @@
 export namespace ArmorConfigJsonSchema {
-    export let $schema: "http://json-schema.org/draft-07/schema";
-    export let additionalProperties: false;
-    export let description: "A schema for Armor configuration files";
+    export const $schema: "http://json-schema.org/draft-07/schema";
+    export const additionalProperties: false;
+    export const description: "A schema for Armor configuration files";
     export namespace properties {
         export namespace $schema_1 {
-            let description_1: "The JSON schema for this file";
+            const description_1: "The JSON schema for this file";
             export { description_1 as description };
-            let _default: "https://raw.githubusercontent.com/armor/armor/master/packages/schema/lib/armor-config.schema.json";
+            const _default: "https://raw.githubusercontent.com/armor/armor/master/packages/schema/lib/armor-config.schema.json";
             export { _default as default };
-            export let type: "string";
-            export let format: "uri";
+            export const type: "string";
+            export const format: "uri";
         }
         export { $schema_1 as $schema };
         export namespace server {
-            let additionalProperties_1: false;
+            const additionalProperties_1: false;
             export { additionalProperties_1 as additionalProperties };
-            let description_2: "Configuration when running Armor as a server";
+            const description_2: "Configuration when running Armor as a server";
             export { description_2 as description };
-            let properties_1: {
+            const properties_1: {
                 readonly address: {
                     readonly armorCliAliases: readonly ["a"];
                     readonly default: "0.0.0.0";
@@ -259,66 +259,66 @@ export namespace ArmorConfigJsonSchema {
                 };
             };
             export { properties_1 as properties };
-            export let title: "server config";
-            let type_1: "object";
+            export const title: "server config";
+            const type_1: "object";
             export { type_1 as type };
         }
     }
-    let title_1: "Armor Configuration";
+    const title_1: "Armor Configuration";
     export { title_1 as title };
-    let type_2: "object";
+    const type_2: "object";
     export { type_2 as type };
     export namespace $defs {
         namespace logFilterText {
-            let type_3: "object";
+            const type_3: "object";
             export { type_3 as type };
-            let description_3: "Log filter with plain text";
+            const description_3: "Log filter with plain text";
             export { description_3 as description };
             export namespace properties_2 {
                 namespace text {
-                    let description_4: "Text to match";
+                    const description_4: "Text to match";
                     export { description_4 as description };
-                    let type_4: "string";
+                    const type_4: "string";
                     export { type_4 as type };
                 }
             }
             export { properties_2 as properties };
-            export let required: readonly ["text"];
+            export const required: readonly ["text"];
             export namespace not {
-                let required_1: readonly ["pattern"];
+                const required_1: readonly ["pattern"];
                 export { required_1 as required };
             }
         }
         namespace logFilterRegex {
-            let type_5: "object";
+            const type_5: "object";
             export { type_5 as type };
-            let description_5: "Log filter with regular expression";
+            const description_5: "Log filter with regular expression";
             export { description_5 as description };
             export namespace properties_3 {
                 namespace pattern {
-                    let description_6: "Regex pattern to match";
+                    const description_6: "Regex pattern to match";
                     export { description_6 as description };
-                    let type_6: "string";
+                    const type_6: "string";
                     export { type_6 as type };
-                    let format_1: "regex";
+                    const format_1: "regex";
                     export { format_1 as format };
                 }
             }
             export { properties_3 as properties };
-            let required_2: readonly ["pattern"];
+            const required_2: readonly ["pattern"];
             export { required_2 as required };
             export namespace not_1 {
-                let required_3: readonly ["text"];
+                const required_3: readonly ["text"];
                 export { required_3 as required };
             }
             export { not_1 as not };
         }
         namespace logFilter {
-            let type_7: "object";
+            const type_7: "object";
             export { type_7 as type };
-            let description_7: "Log filtering rule";
+            const description_7: "Log filtering rule";
             export { description_7 as description };
-            export let allOf: readonly [{
+            export const allOf: readonly [{
                 readonly type: "object";
                 readonly properties: {
                     readonly replacer: {
